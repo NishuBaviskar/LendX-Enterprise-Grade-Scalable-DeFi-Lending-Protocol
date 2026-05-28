@@ -7,7 +7,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAwx_aFXG_wWI6-8nvTGoc-ICLPez55sWY",
+    apiKey: "",
     authDomain: "lendx-protocol.firebaseapp.com",
     projectId: "lendx-protocol",
     storageBucket: "lendx-protocol.firebasestorage.app",
