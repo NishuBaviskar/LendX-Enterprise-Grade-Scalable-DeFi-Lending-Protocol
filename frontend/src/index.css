@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* Custom Global Styles for LendX (Aave-style) */
+
+:root {
+    --background: #0a0b0d;
+    --surface: #16181d;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Custom Scrollbar for Dark Theme */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0b0d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2b2f36;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #383d46;
+}
+
+
+/* Utility for Glassmorphism effects */
+
+.glass {
+    background: rgba(22, 24, 29, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* Animation for real-time health factor glow */
+
+@keyframes pulse-soft {
+    0% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    }
+}
+
+.health-pulse {
+    animation: pulse-soft 2s infinite;
+}

@@ -1,0 +1,1949 @@
+{
+  "contractName": "ILendingPoolProxy",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newImplementation",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "upgradeToAndCall",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newImplementation\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"upgradeToAndCall\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/DAOUpgradeable.sol\":\"ILendingPoolProxy\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol\":{\"keccak256\":\"0x6662ec4e5cefca03eeadd073e9469df8d2944bb2ee8ec8f7622c2c46aab5f225\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4d8544c6f8daa4d1bc215c6a72fe0acdb748664a105b0e5efc19295667521d45\",\"dweb:/ipfs/QmdGWqdnXT8S3RgCR6aV8XHZrsybieMQLLnug1NtpSjEXN\"]},\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\":{\"keccak256\":\"0x631188737069917d2f909d29ce62c4d48611d326686ba6683e26b72a23bfac0b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7a61054ae84cd6c4d04c0c4450ba1d6de41e27e0a2c4f1bcdf58f796b401c609\",\"dweb:/ipfs/QmUvtdp7X1mRVyC3CsHrtPbgoqWaXHp3S1ZR24tpAQYJWM\"]},\"@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol\":{\"keccak256\":\"0x3f13b947637c4969c0644cab4ef399cdc4b67f101463b8775c5a43b118558e53\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c6683e6ade6985d394d32baaef5eea0d8b9ff0b3eca86ae413d6cdde114a9930\",\"dweb:/ipfs/QmdBE8T1BTddZxpdECMsb3KiCFyjNWmxcCddYrWFTXmWPj\"]},\"@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol\":{\"keccak256\":\"0x72d47aebad24c59f6e78d0c3e827440173419a333fd910a37fa1e532c98f7e4c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dc8d1401a44d84ede55b6641d58f63f12a83aecb0816d577d947392b55a6b43b\",\"dweb:/ipfs/QmUskJ7JGzg17MAgRoZfZ3p7P9uucsgm2fKyXQvxdLThLE\"]},\"@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol\":{\"keccak256\":\"0xdaba3f7c42c55b2896353f32bd27d4d5f8bae741b3b05d4c53f67abc4dc47ce8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1fa2e61141c602510bcd2cd936ed9561922ac8772a9b9c9a9db091a74e354a45\",\"dweb:/ipfs/QmcHQDDoEBwJmwUbzoVkytvJsBx3KVHYFFnDkvRGWh9Wmh\"]},\"@openzeppelin/contracts/access/IAccessControl.sol\":{\"keccak256\":\"0xb6b36edd6a2999fd243ff226d6cbf84bd71af2432bbd0dfe19392996a1d9cb41\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1fd2f35495652e57e3f99bc6c510bc5f7dd398a176ea2e72d8ed730aebc6ca26\",\"dweb:/ipfs/QmTQV6X4gkikTib49cho5iDX3JvSQbdsoEChoDwrk3CbbH\"]},\"@openzeppelin/contracts/interfaces/draft-IERC1822.sol\":{\"keccak256\":\"0x2a1f9944df2015c081d89cd41ba22ffaf10aa6285969f0dc612b235cc448999c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ef381843676aec64421200ee85eaa0b1356a35f28b9fc67e746a6bbb832077d9\",\"dweb:/ipfs/QmY8aorMYA2TeTCnu6ejDjzb4rW4t7TCtW4GZ6LoxTFm7v\"]},\"@openzeppelin/contracts/proxy/ERC1967/ERC1967Utils.sol\":{\"keccak256\":\"0x06a78f9b3ee3e6d0eb4e4cd635ba49960bea34cac1db8c0a27c75f2319f1fd65\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://547d21aa17f4f3f1a1a7edf7167beff8dd9496a0348d5588f15cc8a4b29d052a\",\"dweb:/ipfs/QmT16JtRQSWNpLo9W23jr6CzaMuTAcQcjJJcdRd8HLJ6cE\"]},\"@openzeppelin/contracts/proxy/beacon/IBeacon.sol\":{\"keccak256\":\"0xc59a78b07b44b2cf2e8ab4175fca91e8eca1eee2df7357b8d2a8833e5ea1f64c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5aa4f07e65444784c29cd7bfcc2341b34381e4e5b5da9f0c5bd00d7f430e66fa\",\"dweb:/ipfs/QmWRMh4Q9DpaU9GvsiXmDdoNYMyyece9if7hnfLz7uqzWM\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0xaf28a975a78550e45f65e559a3ad6a5ad43b9b8a37366999abd1b7084eb70721\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b7bd24e224f67f65bfadf85dc2929fa965456bb2415478bd0125471b5ce35245\",\"dweb:/ipfs/QmRaydGr8BTHs1kvaZfsNU69pKzUAGFrvABn1KiRSbE51y\"]},\"@openzeppelin/contracts/utils/StorageSlot.sol\":{\"keccak256\":\"0x32ba59b4b7299237c8ba56319110989d7978a039faf754793064e967e5894418\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1ae50c8b562427df610cc4540c9bf104acca7ef8e2dcae567ae7e52272281e9c\",\"dweb:/ipfs/QmTHiadFCSJUPpRjNegc5SahmeU8bAoY8i9Aq6tVscbcKR\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x4296879f55019b23e135000eb36896057e7101fb7fb859c5ef690cf14643757b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://87b3541437c8c443ccd36795e56a338ed12855eec17f8da624511b8d1a7e14df\",\"dweb:/ipfs/QmeJQCtZrQjtJLr6u7ZHWeH3pBnjtLWzvRrKViAi7UZqxL\"]},\"project:/contracts/DAOUpgradeable.sol\":{\"keccak256\":\"0xc157785bebb5a2422f6e3746c1b63414fad5a122931fc1ee8593b0257b196b73\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://205a93ce5c0e9a7299c592c3bd99a7da0687a469a87344fdf7d94a782bcc7c06\",\"dweb:/ipfs/QmfDV6yFsUiP36ejghyHTYAduqKZG41VmBN3bMYA1MxR7D\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\nimport \"@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol\";\nimport \"@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol\";\n\ninterface ILendingPoolProxy {\n    function upgradeToAndCall(address newImplementation, bytes memory data) external;\n}\n\ncontract DAOUpgradeable is Initializable, UUPSUpgradeable, AccessControlUpgradeable {\n    address public lendingPoolProxy;\n    \n    struct Proposal {\n        address newImplementation;\n        uint256 voteCount;\n        bool executed;\n    }\n\n    mapping(uint256 => Proposal) public proposals;\n    uint256 public proposalCount;\n\n    event UpgradeProposed(uint256 indexed id, address implementation);\n    event UpgradeExecuted(address indexed newImplementation);\n\n    function initialize(address _poolProxy) public initializer {\n        __AccessControl_init();\n        __UUPSUpgradeable_init();\n        _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);\n        lendingPoolProxy = _poolProxy;\n    }\n\n    function _authorizeUpgrade(address newImplementation) internal override onlyRole(DEFAULT_ADMIN_ROLE) {}\n\n    /**\n     * @dev Propose a new logic contract for the LendingPool\n     */\n    function proposeUpgrade(address _newImplementation) external onlyRole(DEFAULT_ADMIN_ROLE) {\n        proposalCount++;\n        proposals[proposalCount] = Proposal(_newImplementation, 0, false);\n        emit UpgradeProposed(proposalCount, _newImplementation);\n    }\n\n    /**\n     * @dev Executes the upgrade on the LendingPool via the DAO\n     */\n    function executeUpgrade(uint256 _proposalId) external onlyRole(DEFAULT_ADMIN_ROLE) {\n        Proposal storage prop = proposals[_proposalId];\n        require(!prop.executed, \"Already executed\");\n        \n        prop.executed = true;\n        \n        // Triggers the UUPS upgrade on the target LendingPool\n        ILendingPoolProxy(lendingPoolProxy).upgradeToAndCall(prop.newImplementation, \"\");\n        \n        emit UpgradeExecuted(prop.newImplementation);\n    }\n}",
+  "sourcePath": "D:\\Downloads\\Blockchain\\TY SEM2\\DeFiEnterprise\\blockchain\\contracts\\DAOUpgradeable.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/DAOUpgradeable.sol",
+    "exportedSymbols": {
+      "AccessControlUpgradeable": [
+        362
+      ],
+      "ContextUpgradeable": [
+        836
+      ],
+      "DAOUpgradeable": [
+        10933
+      ],
+      "ERC165Upgradeable": [
+        1181
+      ],
+      "ERC1967Utils": [
+        2839
+      ],
+      "IAccessControl": [
+        1560
+      ],
+      "IERC1822Proxiable": [
+        2399
+      ],
+      "ILendingPoolProxy": [
+        10794
+      ],
+      "Initializable": [
+        616
+      ],
+      "UUPSUpgradeable": [
+        798
+      ]
+    },
+    "id": 10934,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10784,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".20"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:24:46"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+        "file": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+        "id": 10785,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 10934,
+        "sourceUnit": 799,
+        "src": "58:77:46",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol",
+        "file": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol",
+        "id": 10786,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 10934,
+        "sourceUnit": 363,
+        "src": "136:81:46",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ILendingPoolProxy",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 10794,
+        "linearizedBaseContracts": [
+          10794
+        ],
+        "name": "ILendingPoolProxy",
+        "nameLocation": "229:17:46",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "4f1ef286",
+            "id": 10793,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgradeToAndCall",
+            "nameLocation": "262:16:46",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10791,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10788,
+                  "mutability": "mutable",
+                  "name": "newImplementation",
+                  "nameLocation": "287:17:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10793,
+                  "src": "279:25:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10787,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "279:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10790,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "319:4:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10793,
+                  "src": "306:17:46",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 10789,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "306:5:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "278:46:46"
+            },
+            "returnParameters": {
+              "id": 10792,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "333:0:46"
+            },
+            "scope": 10794,
+            "src": "253:81:46",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10934,
+        "src": "219:117:46",
+        "usedErrors": [],
+        "usedEvents": []
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 10795,
+              "name": "Initializable",
+              "nameLocations": [
+                "365:13:46"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 616,
+              "src": "365:13:46"
+            },
+            "id": 10796,
+            "nodeType": "InheritanceSpecifier",
+            "src": "365:13:46"
+          },
+          {
+            "baseName": {
+              "id": 10797,
+              "name": "UUPSUpgradeable",
+              "nameLocations": [
+                "380:15:46"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 798,
+              "src": "380:15:46"
+            },
+            "id": 10798,
+            "nodeType": "InheritanceSpecifier",
+            "src": "380:15:46"
+          },
+          {
+            "baseName": {
+              "id": 10799,
+              "name": "AccessControlUpgradeable",
+              "nameLocations": [
+                "397:24:46"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 362,
+              "src": "397:24:46"
+            },
+            "id": 10800,
+            "nodeType": "InheritanceSpecifier",
+            "src": "397:24:46"
+          }
+        ],
+        "canonicalName": "DAOUpgradeable",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 10933,
+        "linearizedBaseContracts": [
+          10933,
+          362,
+          1181,
+          5469,
+          1560,
+          836,
+          798,
+          2399,
+          616
+        ],
+        "name": "DAOUpgradeable",
+        "nameLocation": "347:14:46",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "e51be0b8",
+            "id": 10802,
+            "mutability": "mutable",
+            "name": "lendingPoolProxy",
+            "nameLocation": "443:16:46",
+            "nodeType": "VariableDeclaration",
+            "scope": 10933,
+            "src": "428:31:46",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 10801,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "428:7:46",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "DAOUpgradeable.Proposal",
+            "id": 10809,
+            "members": [
+              {
+                "constant": false,
+                "id": 10804,
+                "mutability": "mutable",
+                "name": "newImplementation",
+                "nameLocation": "504:17:46",
+                "nodeType": "VariableDeclaration",
+                "scope": 10809,
+                "src": "496:25:46",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 10803,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "496:7:46",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 10806,
+                "mutability": "mutable",
+                "name": "voteCount",
+                "nameLocation": "539:9:46",
+                "nodeType": "VariableDeclaration",
+                "scope": 10809,
+                "src": "531:17:46",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 10805,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "531:7:46",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 10808,
+                "mutability": "mutable",
+                "name": "executed",
+                "nameLocation": "563:8:46",
+                "nodeType": "VariableDeclaration",
+                "scope": 10809,
+                "src": "558:13:46",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 10807,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "558:4:46",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Proposal",
+            "nameLocation": "477:8:46",
+            "nodeType": "StructDefinition",
+            "scope": 10933,
+            "src": "470:108:46",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "013cf08b",
+            "id": 10814,
+            "mutability": "mutable",
+            "name": "proposals",
+            "nameLocation": "620:9:46",
+            "nodeType": "VariableDeclaration",
+            "scope": 10933,
+            "src": "584:45:46",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Proposal_$10809_storage_$",
+              "typeString": "mapping(uint256 => struct DAOUpgradeable.Proposal)"
+            },
+            "typeName": {
+              "id": 10813,
+              "keyName": "",
+              "keyNameLocation": "-1:-1:-1",
+              "keyType": {
+                "id": 10810,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "592:7:46",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "584:28:46",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Proposal_$10809_storage_$",
+                "typeString": "mapping(uint256 => struct DAOUpgradeable.Proposal)"
+              },
+              "valueName": "",
+              "valueNameLocation": "-1:-1:-1",
+              "valueType": {
+                "id": 10812,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 10811,
+                  "name": "Proposal",
+                  "nameLocations": [
+                    "603:8:46"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 10809,
+                  "src": "603:8:46"
+                },
+                "referencedDeclaration": 10809,
+                "src": "603:8:46",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Proposal_$10809_storage_ptr",
+                  "typeString": "struct DAOUpgradeable.Proposal"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "da35c664",
+            "id": 10816,
+            "mutability": "mutable",
+            "name": "proposalCount",
+            "nameLocation": "650:13:46",
+            "nodeType": "VariableDeclaration",
+            "scope": 10933,
+            "src": "635:28:46",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 10815,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "635:7:46",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "eventSelector": "693378ef1892be5859db49de5237e786b7547a3ba400eb863cd6fbd3c16262b8",
+            "id": 10822,
+            "name": "UpgradeProposed",
+            "nameLocation": "676:15:46",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 10821,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10818,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "708:2:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10822,
+                  "src": "692:18:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10817,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "692:7:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10820,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "implementation",
+                  "nameLocation": "720:14:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10822,
+                  "src": "712:22:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10819,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "712:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "691:44:46"
+            },
+            "src": "670:66:46"
+          },
+          {
+            "anonymous": false,
+            "eventSelector": "fd5a9ae7c73c11fde86dd61704e937a04c99e7eef668050f685aabc5d8a6b2e4",
+            "id": 10826,
+            "name": "UpgradeExecuted",
+            "nameLocation": "747:15:46",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 10825,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10824,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "newImplementation",
+                  "nameLocation": "779:17:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10826,
+                  "src": "763:33:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10823,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "763:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "762:35:46"
+            },
+            "src": "741:57:46"
+          },
+          {
+            "body": {
+              "id": 10849,
+              "nodeType": "Block",
+              "src": "863:164:46",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 10833,
+                      "name": "__AccessControl_init",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 63,
+                      "src": "873:20:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 10834,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "873:22:46",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10835,
+                  "nodeType": "ExpressionStatement",
+                  "src": "873:22:46"
+                },
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 10836,
+                      "name": "__UUPSUpgradeable_init",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 670,
+                      "src": "905:22:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
+                        "typeString": "function ()"
+                      }
+                    },
+                    "id": 10837,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "905:24:46",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10838,
+                  "nodeType": "ExpressionStatement",
+                  "src": "905:24:46"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 10840,
+                        "name": "DEFAULT_ADMIN_ROLE",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28,
+                        "src": "950:18:46",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "expression": {
+                          "id": 10841,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4294967281,
+                          "src": "970:3:46",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 10842,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "974:6:46",
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "src": "970:10:46",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 10839,
+                      "name": "_grantRole",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 315,
+                      "src": "939:10:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$_t_bool_$",
+                        "typeString": "function (bytes32,address) returns (bool)"
+                      }
+                    },
+                    "id": 10843,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "939:42:46",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 10844,
+                  "nodeType": "ExpressionStatement",
+                  "src": "939:42:46"
+                },
+                {
+                  "expression": {
+                    "id": 10847,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 10845,
+                      "name": "lendingPoolProxy",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10802,
+                      "src": "991:16:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 10846,
+                      "name": "_poolProxy",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10828,
+                      "src": "1010:10:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "991:29:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 10848,
+                  "nodeType": "ExpressionStatement",
+                  "src": "991:29:46"
+                }
+              ]
+            },
+            "functionSelector": "c4d66de8",
+            "id": 10850,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 10831,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 10830,
+                  "name": "initializer",
+                  "nameLocations": [
+                    "851:11:46"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 470,
+                  "src": "851:11:46"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "851:11:46"
+              }
+            ],
+            "name": "initialize",
+            "nameLocation": "813:10:46",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10829,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10828,
+                  "mutability": "mutable",
+                  "name": "_poolProxy",
+                  "nameLocation": "832:10:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10850,
+                  "src": "824:18:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10827,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "824:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "823:20:46"
+            },
+            "returnParameters": {
+              "id": 10832,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "863:0:46"
+            },
+            "scope": 10933,
+            "src": "804:223:46",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              752
+            ],
+            "body": {
+              "id": 10859,
+              "nodeType": "Block",
+              "src": "1134:2:46",
+              "statements": []
+            },
+            "id": 10860,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "id": 10856,
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 28,
+                    "src": "1114:18:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  }
+                ],
+                "id": 10857,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 10855,
+                  "name": "onlyRole",
+                  "nameLocations": [
+                    "1105:8:46"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 57,
+                  "src": "1105:8:46"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1105:28:46"
+              }
+            ],
+            "name": "_authorizeUpgrade",
+            "nameLocation": "1042:17:46",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 10854,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "1096:8:46"
+            },
+            "parameters": {
+              "id": 10853,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10852,
+                  "mutability": "mutable",
+                  "name": "newImplementation",
+                  "nameLocation": "1068:17:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10860,
+                  "src": "1060:25:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10851,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1060:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1059:27:46"
+            },
+            "returnParameters": {
+              "id": 10858,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1134:0:46"
+            },
+            "scope": 10933,
+            "src": "1033:103:46",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 10887,
+              "nodeType": "Block",
+              "src": "1309:172:46",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 10870,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "1319:15:46",
+                    "subExpression": {
+                      "id": 10869,
+                      "name": "proposalCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10816,
+                      "src": "1319:13:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 10871,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1319:15:46"
+                },
+                {
+                  "expression": {
+                    "id": 10880,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "id": 10872,
+                        "name": "proposals",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10814,
+                        "src": "1344:9:46",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Proposal_$10809_storage_$",
+                          "typeString": "mapping(uint256 => struct DAOUpgradeable.Proposal storage ref)"
+                        }
+                      },
+                      "id": 10874,
+                      "indexExpression": {
+                        "id": 10873,
+                        "name": "proposalCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10816,
+                        "src": "1354:13:46",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1344:24:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Proposal_$10809_storage",
+                        "typeString": "struct DAOUpgradeable.Proposal storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 10876,
+                          "name": "_newImplementation",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10863,
+                          "src": "1380:18:46",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "hexValue": "30",
+                          "id": 10877,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1400:1:46",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        {
+                          "hexValue": "66616c7365",
+                          "id": 10878,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1403:5:46",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "false"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        ],
+                        "id": 10875,
+                        "name": "Proposal",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10809,
+                        "src": "1371:8:46",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Proposal_$10809_storage_ptr_$",
+                          "typeString": "type(struct DAOUpgradeable.Proposal storage pointer)"
+                        }
+                      },
+                      "id": 10879,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1371:38:46",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Proposal_$10809_memory_ptr",
+                        "typeString": "struct DAOUpgradeable.Proposal memory"
+                      }
+                    },
+                    "src": "1344:65:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Proposal_$10809_storage",
+                      "typeString": "struct DAOUpgradeable.Proposal storage ref"
+                    }
+                  },
+                  "id": 10881,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1344:65:46"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 10883,
+                        "name": "proposalCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10816,
+                        "src": "1440:13:46",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 10884,
+                        "name": "_newImplementation",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10863,
+                        "src": "1455:18:46",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 10882,
+                      "name": "UpgradeProposed",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10822,
+                      "src": "1424:15:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_address_$returns$__$",
+                        "typeString": "function (uint256,address)"
+                      }
+                    },
+                    "id": 10885,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1424:50:46",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10886,
+                  "nodeType": "EmitStatement",
+                  "src": "1419:55:46"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 10861,
+              "nodeType": "StructuredDocumentation",
+              "src": "1142:72:46",
+              "text": " @dev Propose a new logic contract for the LendingPool"
+            },
+            "functionSelector": "c915fc93",
+            "id": 10888,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "id": 10866,
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 28,
+                    "src": "1289:18:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  }
+                ],
+                "id": 10867,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 10865,
+                  "name": "onlyRole",
+                  "nameLocations": [
+                    "1280:8:46"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 57,
+                  "src": "1280:8:46"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1280:28:46"
+              }
+            ],
+            "name": "proposeUpgrade",
+            "nameLocation": "1228:14:46",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10864,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10863,
+                  "mutability": "mutable",
+                  "name": "_newImplementation",
+                  "nameLocation": "1251:18:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10888,
+                  "src": "1243:26:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10862,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1243:7:46",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1242:28:46"
+            },
+            "returnParameters": {
+              "id": 10868,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1309:0:46"
+            },
+            "scope": 10933,
+            "src": "1219:262:46",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 10931,
+              "nodeType": "Block",
+              "src": "1650:380:46",
+              "statements": [
+                {
+                  "assignments": [
+                    10899
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 10899,
+                      "mutability": "mutable",
+                      "name": "prop",
+                      "nameLocation": "1677:4:46",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 10931,
+                      "src": "1660:21:46",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Proposal_$10809_storage_ptr",
+                        "typeString": "struct DAOUpgradeable.Proposal"
+                      },
+                      "typeName": {
+                        "id": 10898,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 10897,
+                          "name": "Proposal",
+                          "nameLocations": [
+                            "1660:8:46"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 10809,
+                          "src": "1660:8:46"
+                        },
+                        "referencedDeclaration": 10809,
+                        "src": "1660:8:46",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Proposal_$10809_storage_ptr",
+                          "typeString": "struct DAOUpgradeable.Proposal"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 10903,
+                  "initialValue": {
+                    "baseExpression": {
+                      "id": 10900,
+                      "name": "proposals",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10814,
+                      "src": "1684:9:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Proposal_$10809_storage_$",
+                        "typeString": "mapping(uint256 => struct DAOUpgradeable.Proposal storage ref)"
+                      }
+                    },
+                    "id": 10902,
+                    "indexExpression": {
+                      "id": 10901,
+                      "name": "_proposalId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10891,
+                      "src": "1694:11:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "1684:22:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Proposal_$10809_storage",
+                      "typeString": "struct DAOUpgradeable.Proposal storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1660:46:46"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 10907,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "UnaryOperation",
+                        "operator": "!",
+                        "prefix": true,
+                        "src": "1724:14:46",
+                        "subExpression": {
+                          "expression": {
+                            "id": 10905,
+                            "name": "prop",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10899,
+                            "src": "1725:4:46",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Proposal_$10809_storage_ptr",
+                              "typeString": "struct DAOUpgradeable.Proposal storage pointer"
+                            }
+                          },
+                          "id": 10906,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "1730:8:46",
+                          "memberName": "executed",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 10808,
+                          "src": "1725:13:46",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "416c7265616479206578656375746564",
+                        "id": 10908,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1740:18:46",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_58f47ea4e737df2d9cc4764db26c111751884cf0a1856aca9f4c66cadc811e1b",
+                          "typeString": "literal_string \"Already executed\""
+                        },
+                        "value": "Already executed"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_58f47ea4e737df2d9cc4764db26c111751884cf0a1856aca9f4c66cadc811e1b",
+                          "typeString": "literal_string \"Already executed\""
+                        }
+                      ],
+                      "id": 10904,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4294967278,
+                        4294967278
+                      ],
+                      "referencedDeclaration": 4294967278,
+                      "src": "1716:7:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 10909,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1716:43:46",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10910,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1716:43:46"
+                },
+                {
+                  "expression": {
+                    "id": 10915,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 10911,
+                        "name": "prop",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10899,
+                        "src": "1778:4:46",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Proposal_$10809_storage_ptr",
+                          "typeString": "struct DAOUpgradeable.Proposal storage pointer"
+                        }
+                      },
+                      "id": 10913,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "1783:8:46",
+                      "memberName": "executed",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10808,
+                      "src": "1778:13:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "74727565",
+                      "id": 10914,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1794:4:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "1778:20:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 10916,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1778:20:46"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 10921,
+                          "name": "prop",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10899,
+                          "src": "1933:4:46",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Proposal_$10809_storage_ptr",
+                            "typeString": "struct DAOUpgradeable.Proposal storage pointer"
+                          }
+                        },
+                        "id": 10922,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1938:17:46",
+                        "memberName": "newImplementation",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 10804,
+                        "src": "1933:22:46",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "hexValue": "",
+                        "id": 10923,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1957:2:46",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                          "typeString": "literal_string \"\""
+                        },
+                        "value": ""
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+                          "typeString": "literal_string \"\""
+                        }
+                      ],
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 10918,
+                            "name": "lendingPoolProxy",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10802,
+                            "src": "1898:16:46",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 10917,
+                          "name": "ILendingPoolProxy",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10794,
+                          "src": "1880:17:46",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_ILendingPoolProxy_$10794_$",
+                            "typeString": "type(contract ILendingPoolProxy)"
+                          }
+                        },
+                        "id": 10919,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1880:35:46",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ILendingPoolProxy_$10794",
+                          "typeString": "contract ILendingPoolProxy"
+                        }
+                      },
+                      "id": 10920,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1916:16:46",
+                      "memberName": "upgradeToAndCall",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10793,
+                      "src": "1880:52:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_bytes_memory_ptr_$returns$__$",
+                        "typeString": "function (address,bytes memory) external"
+                      }
+                    },
+                    "id": 10924,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1880:80:46",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10925,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1880:80:46"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 10927,
+                          "name": "prop",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10899,
+                          "src": "2000:4:46",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Proposal_$10809_storage_ptr",
+                            "typeString": "struct DAOUpgradeable.Proposal storage pointer"
+                          }
+                        },
+                        "id": 10928,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "2005:17:46",
+                        "memberName": "newImplementation",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 10804,
+                        "src": "2000:22:46",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 10926,
+                      "name": "UpgradeExecuted",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10826,
+                      "src": "1984:15:46",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 10929,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1984:39:46",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10930,
+                  "nodeType": "EmitStatement",
+                  "src": "1979:44:46"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 10889,
+              "nodeType": "StructuredDocumentation",
+              "src": "1487:75:46",
+              "text": " @dev Executes the upgrade on the LendingPool via the DAO"
+            },
+            "functionSelector": "b4ce5920",
+            "id": 10932,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "id": 10894,
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 28,
+                    "src": "1630:18:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  }
+                ],
+                "id": 10895,
+                "kind": "modifierInvocation",
+                "modifierName": {
+                  "id": 10893,
+                  "name": "onlyRole",
+                  "nameLocations": [
+                    "1621:8:46"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 57,
+                  "src": "1621:8:46"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1621:28:46"
+              }
+            ],
+            "name": "executeUpgrade",
+            "nameLocation": "1576:14:46",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10892,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10891,
+                  "mutability": "mutable",
+                  "name": "_proposalId",
+                  "nameLocation": "1599:11:46",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10932,
+                  "src": "1591:19:46",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10890,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1591:7:46",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1590:21:46"
+            },
+            "returnParameters": {
+              "id": 10896,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1650:0:46"
+            },
+            "scope": 10933,
+            "src": "1567:463:46",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10934,
+        "src": "338:1694:46",
+        "usedErrors": [
+          379,
+          382,
+          643,
+          648,
+          1487,
+          1490,
+          2571,
+          2584,
+          3803,
+          3806
+        ],
+        "usedEvents": [
+          387,
+          1499,
+          1508,
+          1517,
+          2550,
+          10822,
+          10826
+        ]
+      }
+    ],
+    "src": "32:2000:46"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.20+commit.a1b79de6.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2026-03-30T06:12:24.823Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

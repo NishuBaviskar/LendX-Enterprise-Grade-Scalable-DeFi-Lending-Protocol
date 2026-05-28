@@ -1,0 +1,16 @@
+{
+    "name": "lendx-blockchain",
+    "version": "1.0.0",
+    "scripts": {
+        "ganache:fast": "ganache -p 7545 -i 5777 --blockTime 1 --hardfork cancun",
+        "deploy:ganache": "truffle migrate --network development --reset"
+    },
+    "dependencies": {
+        "@openzeppelin/contracts": "^5.0.0",
+        "@openzeppelin/contracts-upgradeable": "^5.0.0",
+        "@openzeppelin/truffle-upgrades": "^1.21.0",
+        "@truffle/hdwallet-provider": "^2.1.15",
+        "dotenv": "^16.3.1",
+        "ganache": "^7.9.2"
+    }
+}

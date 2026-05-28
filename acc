@@ -1,0 +1,42 @@
+0xAEb04790c2Eccba23F0e8f839c9fcAa41c6443de
+
+borrower:
+admin@gmail.com
+
+admin: 
+superadmin@gmail.com
+
+lender:
+admin1@gmail.com
+lender@gmail.com
+
+liquidator
+admin2@gmail.com
+
+auditor
+admin3@gmail.com
+
+
+
+run:
+blockchain
+npm uninstall -g ganache
+npm install -g ganache
+node -v
+netstat -ano | findstr :7545
+taskkill /PID 12345 /F     
+
+ganache --port 7545 --wallet.seed "lendx_enterprise_protocol"
+
+//blockchain
+truffle migrate --network sepolia
+
+//root
+.\sync.ps1
+copy blockchain\build\contracts\*.json frontend\src\abis\ /Y
+ 
+ //backend
+node server.js
+
+//frontend
+npm run dev

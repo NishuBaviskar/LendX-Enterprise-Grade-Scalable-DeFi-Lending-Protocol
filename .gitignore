@@ -1,0 +1,102 @@
+# ====================================================================
+# LendX Protocol Framework Master Gitignore
+# Covers: Hardhat, Foundry, Node.js, React, MySQL, & Local Environment
+# ====================================================================
+
+# 1. Core Operating System & IDE Files
+# --------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 2. Blockchain & Smart Contract Artifacts (Hardhat / Foundry)
+# --------------------------------------------------------------------
+artifacts/
+cache/
+typechain/
+typechain-types/
+coverage/
+coverage.json
+.hardhat/
+.foundry/
+out/
+write-test-logs/
+gasReporterOutput.txt
+
+# 3. Dependency & Package Managers (Backend & Frontend)
+# --------------------------------------------------------------------
+node_modules/
+jspm_packages/
+.pnp/
+.pnp.js
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnpm-store/
+
+# 4. Production, Build & Compilation Distributions
+# --------------------------------------------------------------------
+frontend/build/
+frontend/dist/
+backend/dist/
+backend/build/
+out-tsc/
+*.gem
+*.egg
+
+# 5. Environment Profiles & Sensitive Cryptographic Data
+# --------------------------------------------------------------------
+# Crucial: Never commit private keys, mnemonic phrases, or API tokens!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.env
+mnemonic.txt
+privatekey.json
+
+# 6. Runtime Logs, Caching Data & Process Management
+# --------------------------------------------------------------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# 7. Database Caching & Testing Dumps (MySQL / Local DBs)
+# --------------------------------------------------------------------
+*.sql
+*.sqlite
+*.db
+mysql-data/
+.ipfs/
+
+# Local blockchain / wallet data and sensitive backend keys
+# --------------------------------------------------------------------
+ganache_data/
+blockchain/ganache_data/
+backend/config/serviceAccountKey.json
+*.key
+*.pem
+*.p12
+
+# Editor / OS leftovers (extra)
+.history/

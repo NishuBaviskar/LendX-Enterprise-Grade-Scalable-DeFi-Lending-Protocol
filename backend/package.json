@@ -1,0 +1,14 @@
+{
+    "name": "lendx-backend",
+    "version": "1.0.0",
+    "main": "server.js",
+    "dependencies": {
+        "cors": "^2.8.6",
+        "dotenv": "^16.6.1",
+        "ethers": "^6.16.0",
+        "express": "^4.22.1",
+        "firebase-admin": "^11.11.1",
+        "morgan": "^1.10.1",
+        "nft.storage": "^7.2.0"
+    }
+}

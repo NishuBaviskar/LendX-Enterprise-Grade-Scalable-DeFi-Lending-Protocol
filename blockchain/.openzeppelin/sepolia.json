@@ -1,0 +1,656 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x233F79422C953Bb233777381Cf54e09b73dEC660",
+      "txHash": "0xac9a8c9ebfd0b5d44792f07fe4954dbd76ffad74afc608fb624e273a06182850",
+      "kind": "uups"
+    },
+    {
+      "address": "0x4F8aaa4fd8C7E856d8794ceDC25B872586c65c9b",
+      "txHash": "0x9fe162fc1c2dfbf79760993225f5e6d65c8eba2bac5c6f60820401ae7833233e",
+      "kind": "uups"
+    },
+    {
+      "address": "0xc86AAbD158d93C81758bA6cD3C943E868f53b918",
+      "txHash": "0x67137e68c5197418bbc64cd1f97bab32319c40381cc9b14b5479b3025b19cb90",
+      "kind": "uups"
+    },
+    {
+      "address": "0x6A9cbC13EBD98B7EcEfEF7288c4A555255db0Dcd",
+      "txHash": "0x41c2982f8b825d60b5e9b2a9471002adf8e07a6ec3e4ed62dd55cd0d33f995c7",
+      "kind": "uups"
+    },
+    {
+      "address": "0x61eF3269e8933512c15E885c9678f766549b9f59",
+      "txHash": "0x476de7038af2a7acf3d343bf8693f2f0e9f201629d5f84a1b95447f9acabb8a3",
+      "kind": "uups"
+    },
+    {
+      "address": "0xFa7529c78112E559fD78235dDF7532134d0A21b3",
+      "txHash": "0xca3b55e7c3430e6b666dbfd0056a4d0ac1dc6fb5fc0117d72385e4a2c82ea60b",
+      "kind": "uups"
+    },
+    {
+      "address": "0x0F5C73da8392ba37a1a10510757feAfaF1BE90Fc",
+      "txHash": "0xebc2a97721d142fa41a7e3fd102f406752265bcd461090d85369cb16c65b50ec",
+      "kind": "uups"
+    },
+    {
+      "address": "0x093c52Bb296D775CA7ce83865c6C00D4C33e561d",
+      "txHash": "0xec17c7f0549343d87310ccc4f8b862dc8cc9be66b28c7273041f6aa7bb97322e",
+      "kind": "uups"
+    },
+    {
+      "address": "0xc2F11D7F2Ee6a6AB1510d81EAb43858DF5999A9F",
+      "txHash": "0x35013d360f28e9e74d546b1081586a198ccd5154913dab4df1ced1709db4ad75",
+      "kind": "uups"
+    },
+    {
+      "address": "0x79ee3b767456C52dE5596a29724eC978642e50f9",
+      "txHash": "0xe2591bd946ffa549c784f5d20222159f63cfe5d0ce9a9cfe32d559c4ee1ee4e8",
+      "kind": "uups"
+    },
+    {
+      "address": "0x31A7a7D299D715B1F7ff8753803DC080f9703Fe2",
+      "txHash": "0x1bc4c0994e508cdcb96803788cba9bc4fc153d21fb963ccac1f2d1daa41365b5",
+      "kind": "uups"
+    },
+    {
+      "address": "0x4AdAAA2A10ffe02BDB4E59b612b828A137CFF19b",
+      "txHash": "0xbcf85c5be1f31437d14f76ebef6e47423f620009d9b360b03aa19f190782a9a0",
+      "kind": "uups"
+    },
+    {
+      "address": "0xd4e54F4Eeb9a3dd481248A36428a305Ff0b2D2C0",
+      "txHash": "0x3028b86d2b737ec8f51d179e6ad7ad52c378f8b4fc059eddb10c69cace147228",
+      "kind": "uups"
+    },
+    {
+      "address": "0x2A39Ba240F7bE49367F21b6e1B9DB50B37999884",
+      "txHash": "0x5e3d665ec08a07136d8bfc14b57f724d10a64e715343a58cce8b35080cfc180d",
+      "kind": "uups"
+    },
+    {
+      "address": "0x926163b82b27FCe90456658fBD216d8c54F3aA60",
+      "txHash": "0x57627ce5284e63c5144d18351699f4a242107c54cf3ae9073b2a3affe2eead5a",
+      "kind": "uups"
+    },
+    {
+      "address": "0xfD03200708725C00e25Ca6A3532C3a752E393c37",
+      "txHash": "0x29b765bee7491b604c9094537938993be1ace61602aa4df36b411d559eddb532",
+      "kind": "uups"
+    },
+    {
+      "address": "0x64c3Dd748f45a857c02a5eb136dDB48FdD2c0CBf",
+      "txHash": "0xc58fceca350f85f3d358b2e5ecf40e64227d0391fd8b08317e5bd112a7c01366",
+      "kind": "uups"
+    },
+    {
+      "address": "0x1582c0d83cf8f59F900b9B9A39174Dd8491661Ed",
+      "txHash": "0x7c096a4e493b717c42e013e8911e5d3604506be1e8f23d9177101f34466dd82d",
+      "kind": "uups"
+    },
+    {
+      "address": "0x5A05d74a59Db6AaAB7F48FdDC9Ee76D5AEc2a984",
+      "txHash": "0xf9e642da8a52e29fc8ed5ca67129122aa131d088e5de4c364094439279ce349b",
+      "kind": "uups"
+    },
+    {
+      "address": "0x27D91198aEffa972787428411876b24E27bB92b2",
+      "txHash": "0xd83cc2793f2dc8f097d0cee85baab2de33a78751687d8fe0c9ddaab0e0a7983a",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "7f74c5be9b812d0d597bea490e4555d727c344b1f9ed1c531f955c9c92784089": {
+      "address": "0xF0684cD250B281149dA9Bb7Dc3Be0015275088Af",
+      "txHash": "0xb031076368d84eef17d2686077fe2cb1a690e661e2bf81934577d0719faa97ca",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "userDeposits",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:27"
+          },
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "userBorrows",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:28"
+          },
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "blacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:29"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32"
+              }
+            ]
+          },
+          "t_uint64": {
+            "label": "uint64"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\PausableUpgradeable.sol:21"
+            }
+          ],
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ReentrancyGuardUpgradeable.sol:40"
+            }
+          ],
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:61"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73"
+            }
+          ]
+        }
+      }
+    },
+    "76e8e9958cc326aca7f496aa4558ec07a76e668d33579b06e69fc8ad983fe769": {
+      "address": "0xdCB1ceB44D56801ae053AB69576188d79F60f210",
+      "txHash": "0x1f56e3aa58a0a430a4bf3bdffbf20773799bf3881f63439f32025097a5253a97",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "contract": "DAOUpgradeable",
+            "label": "lendingPoolProxy",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\DAOUpgradeable.sol:12"
+          },
+          {
+            "contract": "DAOUpgradeable",
+            "label": "proposals",
+            "type": "t_mapping(t_uint256,t_struct(Proposal)10809_storage)",
+            "src": "..\\project:\\contracts\\DAOUpgradeable.sol:20"
+          },
+          {
+            "contract": "DAOUpgradeable",
+            "label": "proposalCount",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\DAOUpgradeable.sol:21"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_uint256,t_struct(Proposal)10809_storage)": {
+            "label": "mapping(uint256 => struct DAOUpgradeable.Proposal)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_struct(Proposal)10809_storage": {
+            "label": "struct DAOUpgradeable.Proposal",
+            "members": [
+              {
+                "label": "newImplementation",
+                "type": "t_address"
+              },
+              {
+                "label": "voteCount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "executed",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_uint64": {
+            "label": "uint64"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:61"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73"
+            }
+          ]
+        }
+      }
+    },
+    "4c356da10b73f078e2155eed6d2241b285468b84b6f058a8a93952b4911b95e5": {
+      "address": "0xf712385E2b26e1d8C395Be6966958FdFBBcB000e",
+      "txHash": "0xe61b14134a8aa0b474f475d5aa45241c62ab9b7c71f6a789a79137851ea7c7c4",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "userDeposits",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:26"
+          },
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "userBorrows",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:27"
+          },
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "blacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:28"
+          },
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "totalBorrows",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:31"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32"
+              }
+            ]
+          },
+          "t_uint64": {
+            "label": "uint64"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\PausableUpgradeable.sol:21"
+            }
+          ],
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ReentrancyGuardUpgradeable.sol:40"
+            }
+          ],
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:61"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73"
+            }
+          ]
+        }
+      }
+    },
+    "89ac97b302043975deb683a23d6a511b1ffe2204457632110f0ca4a2daf5f5fb": {
+      "address": "0xE553A2311b758f5e72d2c5746803d23D5C400b3A",
+      "txHash": "0x8879c1b23dcb1cae7ca81b6061a25dfdd981b64c91fa291e832ff54079f9109a",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "userDeposits",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:26"
+          },
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "userBorrows",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:27"
+          },
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "blacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:28"
+          },
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "totalBorrows",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:31"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32"
+              }
+            ]
+          },
+          "t_uint64": {
+            "label": "uint64"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\PausableUpgradeable.sol:21"
+            }
+          ],
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ReentrancyGuardUpgradeable.sol:40"
+            }
+          ],
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:61"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73"
+            }
+          ]
+        }
+      }
+    },
+    "983b1fcb655d95d1d2c6638e042f65c25f6fb18283118f0dbaa43183ce189575": {
+      "address": "0xBdC20075cBA44a0177C3fC906E3c4C67b66E4625",
+      "txHash": "0x1bd9051eb2e2225cea2c8c53a6e092dad24ae8d861f344a1ebcda23b1afdf7be",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "userDeposits",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:26"
+          },
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "userBorrows",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:27"
+          },
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "blacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:28"
+          },
+          {
+            "contract": "LendingPoolUpgradeable",
+            "label": "totalBorrows",
+            "type": "t_uint256",
+            "src": "..\\project:\\contracts\\LendingPoolUpgradeable.sol:31"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)25_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_struct(RoleData)25_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "hasRole",
+                "type": "t_mapping(t_address,t_bool)"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32"
+              }
+            ]
+          },
+          "t_uint64": {
+            "label": "uint64"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\PausableUpgradeable.sol:21"
+            }
+          ],
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ReentrancyGuardUpgradeable.sol:40"
+            }
+          ],
+          "erc7201:openzeppelin.storage.AccessControl": [
+            {
+              "contract": "AccessControlUpgradeable",
+              "label": "_roles",
+              "type": "t_mapping(t_bytes32,t_struct(RoleData)25_storage)",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\AccessControlUpgradeable.sol:61"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
